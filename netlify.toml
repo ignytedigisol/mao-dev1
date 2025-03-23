@@ -1,0 +1,15 @@
+[images]
+  remote_images = [
+    "https://ext.same-assets.com/2383782970/2567439816.png",
+    "https://ext.same-assets.com/2131271369/1352052575.svg"
+  ]
+
+[build]
+  command = "bun run build"
+  publish = ".next"
+
+[build.environment]
+  NETLIFY_NEXT_PLUGIN_SKIP = "true"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
